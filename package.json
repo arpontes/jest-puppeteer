@@ -13,7 +13,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest",
+    "updateSnapshots": "jest --u",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -30,5 +31,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "jest-image-snapshot": "^2.12.0",
+    "jest-puppeteer-preset": "^4.4.0",
+    "puppeteer": "^2.1.1"
   }
 }
